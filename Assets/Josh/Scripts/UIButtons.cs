@@ -12,4 +12,8 @@ public class UIButtons : MonoBehaviour
     {
         Application.Quit();
     }
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }
