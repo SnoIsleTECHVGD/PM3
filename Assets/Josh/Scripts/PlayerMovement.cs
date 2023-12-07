@@ -22,40 +22,25 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(left))
+        if (Input.GetKey(left))
         {
             
-            rb2D.velocity = (Vector2.left * buildup);
+            rb2D.AddForce(Vector2.left * buildup);
         }
-        if (Input.GetKeyUp(left))
+        if (Input.GetKey(right))
         {
-            rb2D.velocity = Vector2.left * 0;
+
+            rb2D.AddForce(Vector2.right * buildup);
         }
-        if (Input.GetKeyDown(right))
+        if (Input.GetKey(up))
         {
-            
-            rb2D.velocity = (Vector2.right * buildup);
+            rb2D.AddForce(Vector2.up * buildup);
         }
-        if (Input.GetKeyUp(right))
+        if (Input.GetKey(down))
         {
-            rb2D.velocity = Vector2.right * 0;
+
+            rb2D.AddForce(Vector2.down * buildup);
         }
-        if (Input.GetKeyDown(up))
-        {
-            rb2D.velocity = (Vector2.up * buildup);
-        }
-        if (Input.GetKeyUp(up))
-        {
-            rb2D.velocity = Vector2.up * 0;
-        }
-        if (Input.GetKeyDown(down))
-        {
-            
-            rb2D.velocity = (Vector2.down * buildup);
-        }
-        if (Input.GetKeyUp(down))
-        {
-            rb2D.velocity = Vector2.down * 0;
-        }
+        rb2D.velocity = new Vector2(Mathf.Clamp(rb2D.velocity.x, -maxSpeed, maxSpeed), Mathf.Clamp(rb2D.velocity.y, -maxSpeed, maxSpeed));
     }
 }
