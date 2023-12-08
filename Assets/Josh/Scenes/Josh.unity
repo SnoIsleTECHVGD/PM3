@@ -477,7 +477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 323
   right: 324
-  up: 119
+  up: 115
   down: 115
   buildup: 5
   maxSpeed: 10
