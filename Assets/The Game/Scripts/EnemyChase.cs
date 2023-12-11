@@ -6,7 +6,7 @@ public class EnemyChase : MonoBehaviour
 {
     public Transform target;
     public float followDistance;
-
+    public float speed;
     private Rigidbody2D rb2D;
 
     // Start is called before the first frame update
@@ -19,8 +19,8 @@ public class EnemyChase : MonoBehaviour
     void Update()
     
     {
-        if (Vector.Distance(taget.positon, transform.positon) < followDistance) ;
+        if (Vector3.Distance(target.position, transform.position) < followDistance) ;
         rb2D.velocity = target.position - transform.position;
-        rb2D.velocity = (target.position - transform.position).normakized * speed;
+        rb2D.velocity = (target.position - transform.position).normalized * speed;
     }
 }
