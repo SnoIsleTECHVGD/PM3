@@ -6,6 +6,14 @@ public class DamageOnHit : MonoBehaviour
 {
     public GameManager gameManager;
     public GameObject spawnPoint;
+    public HealthBar healthBar;
+    public int maxHealth;
+    public int currentHealth;
+    private void Start()
+    {
+        Stats ourStats = GetComponent<Stats>();
+        ourStats.currentHealth = ourStats.maxHealth;
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Stats ourStats = GetComponent<Stats>();
@@ -13,9 +21,13 @@ public class DamageOnHit : MonoBehaviour
 
         if (hitStats != null)
         {
-            hitStats.health -= ourStats.attack - hitStats.defense;
-
-            if (ourStats.health <= 0)
+            hitStats.currentHealth -= ourStats.attack - hitStats.defense;
+            if (healthBar)
+            {
+                currentHealth -= hitStats.currentHealth;
+                healthBar.SetHealth(currentHealth);
+            }
+            if (ourStats.currentHealth <= 0)
             {
                 if (spawnPoint)
                 {

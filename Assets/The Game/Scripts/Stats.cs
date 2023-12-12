@@ -7,5 +7,6 @@ public class Stats : MonoBehaviour
     public int health;
     public int attack;
     public int defense;
-
+    public int currentHealth;
+    public int maxHealth;
 }
