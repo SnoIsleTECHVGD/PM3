@@ -4,7 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(Stats))]
 public class DamageOnHit : MonoBehaviour
 {
-    public GameObject loseText;
+    public GameManager gameManager;
+    public GameObject spawnPoint;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Stats ourStats = GetComponent<Stats>();
@@ -16,9 +17,9 @@ public class DamageOnHit : MonoBehaviour
 
             if (ourStats.health <= 0)
             {
-                if (loseText)
+                if (spawnPoint)
                 {
-                    loseText.SetActive(true);
+                    gameManager.PositionPlayer();
                 }
                 gameObject.SetActive(false);
             }

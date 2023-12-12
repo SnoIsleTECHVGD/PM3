@@ -17,10 +17,12 @@ public class EnemyChase : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    
+
     {
-        if (Vector3.Distance(target.position, transform.position) < followDistance) ;
-        rb2D.velocity = target.position - transform.position;
-        rb2D.velocity = (target.position - transform.position).normalized * speed;
+        if (Vector3.Distance(target.position, transform.position) < followDistance)
+        {
+            rb2D.velocity = target.position - transform.position;
+            rb2D.velocity = (target.position - transform.position).normalized * speed;
+        }
     }
 }
