@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
 			}
 			else
 			{
-				message = "Click or Press Enter to Play";
+				message = "You have woken up.";
 			}
 
 			//Define a new rectangle for the UI on the screen
