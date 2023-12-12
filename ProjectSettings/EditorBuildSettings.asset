@@ -4,14 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Josh/Scenes/Josh.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/The Game/Scenes/MainScreen.unity
-    guid: 7d0d364e8bcdc73479d9de2038352375
-  - enabled: 1
-    path: Assets/The Game/Scenes/Credits.unity
-    guid: 82ae6c796e4b558458b35cd80f7d1711
+  m_Scenes: []
   m_configObjects: {}

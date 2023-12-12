@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode down;
     public float buildup;
     public float maxSpeed;
+    
 
 
     private Rigidbody2D rb2D;
