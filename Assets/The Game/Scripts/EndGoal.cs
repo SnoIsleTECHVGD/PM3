@@ -9,4 +9,5 @@ public class EndGoal : MonoBehaviour
     {
         winText.SetActive(true);
     }
+
 }
