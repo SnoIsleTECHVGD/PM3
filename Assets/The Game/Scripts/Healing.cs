@@ -5,12 +5,12 @@ using UnityEngine;
 public class Healing : MonoBehaviour
 {
     public KeyCode Heal;
-    public GameObject he;
+    public GameObject healIcon;
     void Update()
     { 
-        if (Input.GetKeyDown(Heal) && he.activeInHierarchy)
+        if (Input.GetKeyDown(Heal) && healIcon.activeInHierarchy)
         {
-            he.SetActive(false);
+            healIcon.SetActive(false);
                 Stats mystats = GetComponent<Stats>();
                 if (mystats.currentHealth < mystats.maxHealth)
                 {
