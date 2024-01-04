@@ -7,8 +7,6 @@ public class DamageOnHit : MonoBehaviour
     public GameManager gameManager;
     public GameObject spawnPoint;
     public HealthBar healthBar;
-    public int maxHealth;
-    public int currentHealth;
     private void Start()
     {
         Stats ourStats = GetComponent<Stats>();
@@ -24,8 +22,8 @@ public class DamageOnHit : MonoBehaviour
             hitStats.currentHealth -= ourStats.attack - hitStats.defense;
             if (healthBar)
             {
-                currentHealth -= hitStats.currentHealth;
-                healthBar.SetHealth(currentHealth);
+                ourStats.currentHealth -= hitStats.currentHealth;
+                healthBar.SetHealth(ourStats.currentHealth);
             }
             if (ourStats.currentHealth <= 0)
             {

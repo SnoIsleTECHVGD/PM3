@@ -1870,6 +1870,7 @@ GameObject:
   - component: {fileID: 1828266127}
   - component: {fileID: 1828266128}
   - component: {fileID: 1828266129}
+  - component: {fileID: 1828266130}
   m_Layer: 0
   m_Name: P1
   m_TagString: Untagged
@@ -2020,8 +2021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 270c5f05a88ef0d44bbf48e886a8ea31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
-  attack: 11
+  attack: 10
   defense: 0
   currentHealth: 50
   maxHealth: 50
@@ -2040,8 +2040,6 @@ MonoBehaviour:
   gameManager: {fileID: 169818872}
   spawnPoint: {fileID: 2007658972}
   healthBar: {fileID: 343998271}
-  maxHealth: 50
-  currentHealth: 50
 --- !u!114 &1828266128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2074,6 +2072,20 @@ MonoBehaviour:
   heals: {fileID: 343444390}
   keyIcon: {fileID: 710581294}
   key: {fileID: 549561912}
+--- !u!114 &1828266130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828266120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a1579fdfd8c60d4289b8d65c7f369bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Heal: 101
+  he: {fileID: 306868004}
 --- !u!1 &1832168305
 GameObject:
   m_ObjectHideFlags: 0
@@ -2318,7 +2330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2089356942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2334,8 +2346,6 @@ MonoBehaviour:
   gameManager: {fileID: 169818872}
   spawnPoint: {fileID: 0}
   healthBar: {fileID: 0}
-  maxHealth: 50
-  currentHealth: 50
 --- !u!114 &2089356943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2348,7 +2358,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 270c5f05a88ef0d44bbf48e886a8ea31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
   attack: 5
   defense: 0
   currentHealth: 50
