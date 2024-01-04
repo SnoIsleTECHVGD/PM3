@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class OpenSesame : MonoBehaviour
 {
-    public KeyCode Open;
+    public GameObject trash;
     public GameObject keyIcon;
     public GameObject Door;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name.Equals("Door") && keyIcon.activeInHierarchy)
         {
+            trash.SetActive(false);
             Door.SetActive(false);
             keyIcon.SetActive(false);
         }

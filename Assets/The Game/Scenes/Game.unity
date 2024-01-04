@@ -1102,7 +1102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723975134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -267.43, y: 31.85, z: 0}
+  m_LocalPosition: {x: -204.35, y: 20.14, z: 0}
   m_LocalScale: {x: 0.6562, y: 0.6276, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2099,7 +2099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1b0b353d06ecd429b13689ae4d243c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Open: 101
+  trash: {fileID: 723975134}
   keyIcon: {fileID: 710581294}
   Door: {fileID: 1834603466}
 --- !u!1 &1832168305
