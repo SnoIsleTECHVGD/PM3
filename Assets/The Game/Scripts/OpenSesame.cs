@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class OpenSesame : MonoBehaviour
 {
     public GameObject trash;
@@ -14,6 +14,7 @@ public class OpenSesame : MonoBehaviour
             trash.SetActive(false);
             Door.SetActive(false);
             keyIcon.SetActive(false);
+            SceneManager.LoadScene("Credits");
         }
     }
 }
