@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
 			}
 			else
 			{
-				message = "You have woken up.";
+				message = "Follow the barrels.";
 			}
 
 			//Define a new rectangle for the UI on the screen
