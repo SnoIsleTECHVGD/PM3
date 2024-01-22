@@ -14,4 +14,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/The Game/Scenes/Credits.unity
     guid: 82ae6c796e4b558458b35cd80f7d1711
+  - enabled: 1
+    path: Assets/The Game/Scenes/Collin.unity
+    guid: 15d2fafd856659a47a36c644655c1db7
+  - enabled: 1
+    path: Assets/The Game/Scenes/Faustina.unity
+    guid: ac49ad0408a3cd347912bee46d723cad
+  - enabled: 1
+    path: Assets/The Game/Scenes/Jasmine.unity
+    guid: e0c9f66ed715ae74080d5c14eff5c2de
+  - enabled: 1
+    path: Assets/The Game/Scenes/Josh.unity
+    guid: d5f9b1d633cce314fa4f8d244f81c52f
+  - enabled: 1
+    path: Assets/The Game/Scenes/Matthew.unity
+    guid: dd671aa1b29122542863803063b2c8ee
   m_configObjects: {}
