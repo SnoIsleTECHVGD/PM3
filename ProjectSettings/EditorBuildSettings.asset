@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/The Game/Scenes/Matthew.unity
     guid: dd671aa1b29122542863803063b2c8ee
+  - enabled: 1
+    path: Assets/The Game/Scenes/Death.unity
+    guid: ee3fb359bd637cc4abf906d0cb2c9289
   m_configObjects: {}
